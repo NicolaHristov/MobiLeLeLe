@@ -35,6 +35,7 @@ public class ApplicationBeanConfiguration {
                         DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
                 return parse;
             }
+            //adsa
         });
 
         return modelMapper;
