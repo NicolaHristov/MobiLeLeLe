@@ -17,6 +17,11 @@ import java.time.format.DateTimeFormatter;
 @Configuration
 public class ApplicationBeanConfiguration {
 
+    @Bean
+    public ModelMapper modelMapper1(){
+        return new ModelMapper();
+    }
+
 
     @Bean
     public Gson gson() {
@@ -35,7 +40,7 @@ public class ApplicationBeanConfiguration {
                         DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
                 return parse;
             }
-            //adsa
+
         });
 
         return modelMapper;
